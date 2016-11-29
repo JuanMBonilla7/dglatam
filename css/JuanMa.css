@@ -1017,7 +1017,6 @@ footer {
 .infoback {
   float:left;
   width: 100%;
-  padding: 0 0 100px 0;
 }
 
 .ourstory {
@@ -1416,6 +1415,7 @@ padding: 10%;
   display: block;
   font-weight: lighter;
   font-size: 23px;
+  padding: 0 0 50px 0;
 }
 .staffing-info2 h3{
   color: #454545;
@@ -1484,7 +1484,7 @@ margin: auto;
 }
 
 .moar h3{
-  color: #b8252b;
+  color: #dfc133;
   font-size: 35px;
   font-weight: 5px;
   text-align: center;
