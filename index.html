@@ -1,0 +1,549 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>DataGuard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/JuanMa.css" />
+	<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+	<link href="css/full-slider.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="images/favicon.ico">
+	<!-- Bootstrap core JavaScript -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!--start-top-nav-script-->
+<script>
+	$(function() {
+		var pull 		= $('#pull');
+		menu 		= $('nav ul');
+		menuHeight	= menu.height();
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+		$(window).resize(function(){
+			var w = $(window).width();
+			if(w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+	});
+</script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+
+		$('#nav, #pdd00, #menusmart').affix({
+			offset: {
+				top: $('header').height()
+			}
+		});	
+
+		var navMain = $("#nav-main");
+		navMain.on("click", "a", null, function () {
+			navMain.collapse('hide');
+		});
+
+	});
+
+</script>
+
+<style>
+	/* bootstrap 3 helpers */
+
+	.navbar-form input, .form-inline input {
+		width:auto;
+	}
+
+	#pdd00{
+		width: 100%;
+		position: fixed;
+		bottom: 0px;
+	}
+
+	#menusmart{
+		width: 100%;
+		position: fixed;
+		top: 0px;
+	}
+
+
+	header{
+		height: calc(30% - 5px);
+		background-color:#eee;
+	}
+
+	#nav.affix {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index:10;
+	}
+
+	#pdd00.affix {
+		width: 100%;
+		position: fixed;
+		top: 0px;
+	}
+
+	#menusmart.affix {
+		width: 100%;
+		position: fixed;
+		top: 0px;
+	}
+</style>
+</head>
+<body>
+	<!--StartPortada-->
+	<header class="portada">
+		<section class="imgportada w100">
+			<article class="espaciotop w100">
+				<div class="logo2">
+					<img src="images/img-0.png">
+				</div>
+			</article>
+			<article class="w100" style="float: left;">
+				<div class="decoracion" style="background:#2778b8"></div>
+			</article>
+			<article class="infoportada w100">
+				<div class="subtitulo">
+					<h3>Somos una empresa <b>especializada</b> en</h3>
+					<br>
+				</div>	
+				<div class="portadaservices">	
+					<a href="#datacenter" class="scroll"><h1>SERVICIOS DE DATACENTER</h1></a>
+					<a href="#outsourcing" class="scroll"><h1>OUTSOURCING DE IT</h1></a>
+					<a href="#seguridad" class="scroll"><h1>SEGURIDAD DE LA RED</h1></a>
+					<a href="#integracion" class="scroll"><h1>INTEGRACI&Oacute;N DE SOLUCIONES</h1></a>
+					<a href="#consultoria" class="scroll"><h1>CONSULTOR&Iacute;A EN GESTI&Oacute;N DE RIESGO</h1></a>
+				</div>
+			</article>
+		</section>
+	</header> 
+	<!--EndPortada--> 	
+	<!-- Begin Navbar -->
+	<div id="nav">
+		<!-- Menu1 -->
+		<div class="navbar navbar-inverse pdd1 navbar-static-top" role="navigation" id="pdd00">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-brand cursorr scroll" style="margin-right:5%;" onclick="window.location = 'index.html'"><img class="resize" src="images/logo_dataguard.png" />
+				</div>
+			</div>
+			<div class="navbar-collapse collapse pdd2" >
+				<ul class="nav navbar-nav">
+					<li><a href="views/Nosotros.html">Nosotros</a></li>
+					<li class="dropdown">
+						<a href="#imgservicios" class="scroll">Servicios</a> 
+						<div class="dropdown-content">
+							<a href="#datacenter" class="scroll">Servicios DataCenter</a>
+							<a href="#outsourcing" class="scroll">Outsourcing de IT</a>
+							<a href="#seguridad" class="scroll">Seguridad de la Red</a>
+							<a href="#integracion" class="scroll">Integraci&oacute;n de Soluciones</a>
+							<a href="#consultoria" class="scroll">Consutlor&iacute;a en Gesti&oacute;n de Riesgo</a>
+						</div>
+					</li>
+					<li> <a href="#myCarouselscroll" class="scroll">Noticias</a></li>
+					<li><a href="#contactscroll" class="scroll">Contacto</a> </li>
+				</ul>
+			</div>
+		</div>
+		<!-- Fin-Menu1 -->
+		<!-- Menu2 -->
+		<div class="navbar  pdd1 navbar-inverse navbar-static-top" role="navigation" id="menusmart">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-brand cursorr" style="margin-right:5%;" onclick="window.location = '../index.html'"><img class="resize" src="images/logo_dataguard.png" /></div>
+			</div>
+			<div class="collapse navbar-collapse pdd3" id="nav-main">
+				<ul class="nav navbar-nav">
+					<a href="views/Nosotros.html"><li>Nosotros</li></a>
+					<a href="#datacenter" class="scroll"><li> Servicios de DataCenter</li></a>
+					<a href="#outsourcing" class="scroll"><li>Outsourcing de IT</li></a>
+					<a href="#seguridad" class="scroll"><li>Seguridad de la Red</li></a>
+					<a href="#integracion" class="scroll"><li>Integraci&oacute;n de Soluciones</li></a>
+					<a href="#consultoria" class="scroll"><li>Consutlor&iacute;a en Gesti&oacute;n de Riesgo</li></a>
+					<a href="#myCarouselscroll" class="scroll"><li> Noticias</li></a>
+					<a href="#contactscroll" class="scroll"><li>Contacto</li></a> 
+				</ul>
+			</div>
+		</div>
+		<!-- Fin-Menu2 -->
+	</div>
+
+	<!-- Start-Sección1-ResumenCompany -->
+	<div class="resumencompany" id="imgservicios">
+		<div class="col-md-8 resumencompany-info wow fadeInLeft">
+			<div class="resumencompany-head">
+				<h3>
+					Somos una empresa global especializada en mantener <br> la continuidad de su negocio.
+					<br>
+					<br>
+					<hr>Somos una empresa con m&aacute;s de 25 a&ntilde;os de experiencia en el <br> mercado de IT. 
+					<br>
+					<br>
+					<hr>Nos encontramos licalizados en Centro Am&eacute;rica, el Caribe y en <br> Estados Unidos, con operaciones exitosas.
+				</h3>
+			</div>
+		</div>
+	</div>
+	<!-- End-Sección1-ResumenCompany -->
+	<!-- Start-Sección2-Solutions -->	
+	<section class="w100" style="float:left;">
+		<article class="sectionservices">
+			<div class="ourservicesimg">
+				<br>
+			</div>
+		</article>
+		<article id="datacenter" class="resumenoutsrc">
+			<div style="background:#f0f0f0; width:100%; padding:2%; float:left;"></div>
+			<div class="expertice-grids">
+				<div class="col-md-7 expertice-left-grid2 wow fadeInLeft" data-wow-delay="0.4s">
+					<div class="expertise-head">
+						<h3>Servicios de DataCenter</h3>
+						<p>Gracias a nuestro avanzado <b>Metropolitan Data Center</b> podemos ofrecer lo mejor en servicios cloud, servidores virtuales, continuidad de negocio (DRP), custodia de medios y colocaci&oacute;n.
+						</p>		
+					</div>
+					<div class="expertise-left-inner-grids">
+						<div class="e-left-inner-grid">
+							<div class="botonmore-index">
+								<a href="views/DataCenter.html" class="paramas-index"><img src="images/moreimg.svg"></a>
+							</div>
+						</div>
+					</div>			
+				</div>
+				<div class="col-md-5 wow fadeInRight" id="close_right" data-wow-delay="0.4s">
+					<img src="images/hardware-portada.png">
+				</div>
+			</div>
+		</article>
+		<article id="outsourcing" class="resumenhard">
+			<div style="background:#b3b3b3; width:100%; padding:2%; float:left;"></div>
+			<div class="expertice-grids">
+				<div class="col-md-5 wow fadeInRight" id="close_right" data-wow-delay="0.4s">
+					<img class="expertice-img" src="images/outsourcing-portada.png">
+				</div>
+				<div class="col-md-7 expertice-left-grid2 wow fadeInLeft" data-wow-delay="0.4s">
+					<div class="expertise-head">
+						<h3>Outsourcing de IT</h3>
+						<p>Una de nuestras especialidades es el <b>servicio de outsourcing</b> que incluye <b>staffing de personal t&eacute;cnico, soporte multiplataforma (SUN, IBM, HP, CISCO) y servicios administrados</b> como el monitoreo.
+						</p>		
+					</div>
+					<div class="expertise-left-inner-grids">
+						<div class="e-left-inner-grid">
+							<div class="botonmore-index">
+								<a href="views/Outsourcing.html" class="paramas-index"><img src="images/moreimg.svg"></a>
+							</div>
+						</div>
+					</div>			
+				</div>
+			</div>
+		</article>
+		<article id="seguridad" class="resumenidentity">
+			<div style="background:#cccccc; width:100%; padding:2%; float:left;"></div>
+			<div class="expertice-grids">
+				<div class="col-md-7 expertice-left-grid2 wow fadeInLeft" data-wow-delay="0.4s">
+					<div class="expertise-head">
+						<h3>Seguridad de la Red</h3>
+						<p>La era de la informaci&oacute;n ha llegado y es importante que usted proteja la suya. Somos expertos en <b>seguridad de la informaci&oacute;n</b> y le ayudamos a <b>analizar sus defensas para identificar amenazas y hacer un blindaje de su red</b>.
+						</p>		
+					</div>
+					<div class="expertise-left-inner-grids">
+						<div class="e-left-inner-grid">
+							<div class="botonmore-index">
+								<a href="views/Seguridad.html" class="paramas-index"><img src="images/moreimg.svg"></a>
+							</div>
+						</div>
+					</div>			
+				</div>
+				<div class="col-md-5 wow fadeInRight" id="close_right" data-wow-delay="0.4s">
+					<img src="images/identity-portada.png">
+				</div>
+			</div>
+		</article>
+		<article id="integracion" class="resumenfactory">
+			<div style="background:#fff; width:100%; padding:2%; float:left;"></div>
+			<div class="expertice-grids">
+				<div class="col-md-5 wow fadeInRight" id="close_right" data-wow-delay="0.4s">
+					<img class="expertice-img" src="images/factory-portada.png">
+				</div>
+				<div class="col-md-7 expertice-left-grid2 wow fadeInLeft" data-wow-delay="0.4s">
+					<div class="expertise-head">
+						<h3>Integraci&oacute;n de Soluciones</h3>
+						<br>
+						<p>Usted puede estar tranquilo manejando su negocio mientras nosotros <b>integramos las soluciones que necesita</b> para el funcionamiento eficiente y continuo de sus operaciones.
+						</p>
+					</div>
+					<div class="expertise-left-inner-grids">
+						<div class="e-left-inner-grid">
+							<div class="botonmore-index">
+								<a href="views/Software-Factory.html" class="paramas-index"><img src="images/moreimg.svg"></a>
+							</div>
+						</div>
+					</div>			
+				</div>
+			</div>
+		</article>
+		<article id="consultoria" class="resumenoutsrc">
+			<div style="background:#f0f0f0; width:100%; padding:2%; float:left;"></div>
+			<div class="expertice-grids">
+				<div class="col-md-7 expertice-left-grid2 wow fadeInLeft" data-wow-delay="0.4s">
+					<div class="expertise-head">
+						<h3>Consultor&iacute;a en Gesti&oacute;n de Riesgo</h3>
+						<p>Ofrecemos consultor&iacute;as profesionales en la gesti&oacute;n de riesgos de su empresa. <b>La planificaci&oacute;n, administraci&oacute;n y las certificaciones de la empresa son algunas de nuestras fortalezas</b>.
+						</p>		
+					</div>
+					<div class="expertise-left-inner-grids">
+						<div class="e-left-inner-grid">
+							<div class="botonmore-index">
+								<a href="views/DataCenter.html" class="paramas-index"><img src="images/moreimg.svg"></a>
+							</div>
+						</div>
+					</div>			
+				</div>
+				<div class="col-md-5 wow fadeInRight" id="close_right" data-wow-delay="0.4s">
+					<img src="images/hardware-portada.png">
+				</div>
+			</div>
+		</article>
+	</section>
+	<!-- End-Sección2-Solutions -->
+	<div id="myCarouselscroll" style="background:#FFF; width:100%; float:left;"></div>
+	<!-- Start-Sección3-News -->
+	<section  id="myCarousel" class="carousel slide" data-ride="carousel" style="background:#09435a; float:left; width:100%;">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+			<li data-target="#myCarousel" data-slide-to="4"></li>
+			<li data-target="#myCarousel" data-slide-to="5"></li>
+		</ol>
+		<!-- Wrapper for Slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<!-- Set the first background image using inline CSS below. -->
+				<div class="fill" style="background-image:url(images/12.jpg);">
+					<div class="titulocar1">
+						<h3></h3>
+					</div>
+				</div>      
+			</div>
+			<div class="item">
+				<!-- Set the second background image using inline CSS below. -->
+				<div class="fill" style="background-image:url(images/13.jpg);">
+					<div class="titulocar2">
+						<h3></h3>
+					</div>
+				</div>   
+			</div>
+			<div class="item">
+				<!-- Set the third background image using inline CSS below. -->
+				<div class="fill" style="background-image:url(images/14.jpg);">
+					<div class="titulocar1">
+						<h3></h3>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<!-- Set the third background image using inline CSS below. -->
+				<div class="fill" style="background-image:url(images/15.jpg);">
+					<div class="titulocar2">
+						<h3></h3>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<!-- Set the third background image using inline CSS below. -->
+				<div class="fill" style="background-image:url(images/16.jpg);">
+					<div class="titulocar1">
+						<h3></h3>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<!-- Set the third background image using inline CSS below. -->
+				<div class="fill" style="background-image:url(images/17.jpg);">
+					<div class="titulocar2">
+						<h3></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="icon-prev"></span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="icon-next"></span>
+		</a>
+
+	</section>
+
+	<script type="text/javascript">
+		$('.carousel').carousel({
+			interval: 5000
+		})
+	</script>  
+	<!-- End-Sección3-News -->
+	<!-- Start-Contacto -->
+	<div id="contactscroll" style="background:#e7e7e7; width:100%; padding:1.5%; float:left;"></div>
+	<div id="contact" class="contact">
+		<div class="container" id="contact1">
+			<div class="contact-grids">
+				<div class="col-md-8">
+					<div class="contact-left wow fadeInRight" data-wow-delay="0.4s">
+						<h3>Cont&aacute;ctenos</h3>
+						<label>No se puede predecir, se prepara.</label>
+						<div class="contact-left-grids">
+							<div class="col-md-6">
+								<div class="contact-left-grid">
+									<h2>EL SALVADOR</h2>
+									<p>Paseo General <br>Escal&oacute;n y Calle <br>Arturo Ambrogi No.137<br> Colonia Escal&oacute;n. 
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="contact-right-grid">
+									<p><span class="c-msg"> </span><a href="#">info@dataguardgroup.com</a></p>
+									<p><span class="c-face"></span><a href="https://www.facebook.com/Dataguardgroup">facebook.com/Dataguardgroup</a></p>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="col-md-3">
+									<p>
+										GUATEMALA <br>
+										4. Avenida 7-83, <br>
+										Zona 10, Plaza <br>Ciudad Vieja, 2do. <br>
+										Nivel 
+									</p>
+								</div>
+								<div class="col-md-3">
+									<p>COSTA RICA<br>
+										750 mts Oeste <br>
+										Restaurante Tony <br>
+										Romas Escazu
+										</p>
+								</div>
+								<div class="col-md-3">
+										<p>NICARAGUA <br>
+										Centro comercial <br>Managua <br>
+										Modulo C-70
+										</p>
+								</div>
+								<div class="col-md-3">
+									<p>HONDURAS <br>Paseo General <br>Escal&oacute;n y Calle <br>Arturo Ambrogi No.137<br> Colonia Escal&oacute;n. 
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4  expertice-right-grid7  wow fadeInRight" id="close_right" data-wow-delay="0.4s">
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+			<div class="container" id="contact2">
+				<div class="contact-grids">
+					<div class="col-md-12">
+						<div class="contact-left wow fadeInRight" data-wow-delay="0.4s">
+							<h3>Cont&aacute;ctenos</h3>
+							<label>No se puede predecir, se prepara.</label>
+							<div class="contact-left-grids">
+								<div class="col-md-6">
+									<div class="contact-left-grid">
+										<h2>EL SALVADOR</h2>
+										<p>Paseo General <br>Escal&oacute;n y Calle <br>Arturo Ambrogi No.137<br> Colonia Escal&oacute;n. 
+										</p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="contact-right-grid">
+										<p><span class="c-msg"> </span><a href="#">info@dataguardgroup.com</a></p>
+										<p><span class="c-face"></span><a href="https://www.facebook.com/Dataguardgroup">facebook.com/Dataguardgroup</a></p>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="col-md-3">
+										<p>
+											GUATEMALA <br>
+											4. Avenida 7-83, <br>
+											Zona 10, Plaza <br>Ciudad Vieja, 2do. <br>
+											Nivel 
+										</p>
+									</div>
+									<div class="col-md-3">
+										<p>COSTA RICA<br>
+											750 mts Oeste <br>
+											Restaurante Tony <br>
+											Romas Escazu
+										</p>
+									</div>
+									<div class="col-md-3">
+										<p>NICARAGUA <br>
+											Centro comercial <br>Managua <br>
+											Modulo C-70
+										</p>
+									</div>
+									<div class="col-md-3">
+										<p>HONDURAS <br>Paseo General <br>Escal&oacute;n y Calle <br>Arturo Ambrogi No.137<br> Colonia Escal&oacute;n. 
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<!--Footer-->
+				<section class="finfooter w100" style="background: black; float: left;">
+					<article class="infofooter w100">
+						<div class="imgfooter">
+							<br>
+
+						</div>
+						<p class="text-center w100"><a href="#">DataGuard Group - 2017</a></p>
+					</article>
+				</section>
+				<!--- derechos_reservados_angel_cotto -->
+				<div class="copy-right text-center">
+
+					<script type="text/javascript">
+						$(document).ready(function() {
+
+							$().UItoTop({ easingType: 'easeOutQuart' });
+
+						});
+					</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+			</div>
+			<!-- End-Contacto -->		
+		</body>
+		</html>
