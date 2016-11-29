@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Nosotros</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap core CSS -->
+	<link href="../css/bootstrap.css" rel="stylesheet">
+	<link href="../css/style.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="../css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../css/component.css" />
+	<link rel="stylesheet" type="text/css" href="../css/JuanMa.css" />
+	<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="../images/favicon.ico">
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+
+<!----start-top-nav-script---->
+<script>
+	$(function() {
+		var pull 		= $('#pull');
+		menu 		= $('nav ul');
+		menuHeight	= menu.height();
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+		$(window).resize(function(){
+			var w = $(window).width();
+			if(w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+	});
+</script>
+<script type="text/javascript" src="../js/move-top.js"></script>
+<script type="text/javascript" src="../js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+
+		var navMain = $("#nav-main");
+		navMain.on("click", "a", null, function () {
+			navMain.collapse('hide');
+		});
+
+	});
+
+</script>
+
+<style>
+	/* bootstrap 3 helpers */
+
+	.navbar-form input, .form-inline input {
+		width:auto;
+	}
+
+	#menusmart{
+		width: 100%;
+		position: fixed;
+		top: 0px;
+	}
+
+
+	#menusmart.affix {
+		width: 100%;
+		position: fixed;
+		top: 0px;
+	}
+</style>
+
+</head>
+<body>
+	<!-- Menu1 -->
+		<div class="navbar navbar-inverse pdd1 navbar-fixed-top" role="navigation" id="pdd00">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-brand cursorr scroll" style="margin-right:5%;" onclick="window.location = '../index.html'"><img class="resize" src="../images/logo_dataguard.png" />
+				</div>
+			</div>
+			<div class="navbar-collapse collapse pdb2" >
+				<ul class="nav navbar-nav">
+				<li><a href="../index.html">Inicio</a></li>
+					<li><a href="#" class="active">Nosotros</a></li>
+					<li class="dropdown">
+						<a href="#">Servicios</a> 
+						<div class="dropdown-content">
+							<a href="Outsourcing.html">Outsourcing de IT</a>
+							<a href="IT-Hardware.html">Hardware de IT</a>
+							<a href="Security.html">Seguridad de la Red</a>
+							<a href="Software-Factory.html">Integraci&oacute;n de Soluciones</a>
+							<a href="#consultoria" class="scroll">Consutlor&iacute;a en Gesti&oacute;n de Riesgo</a>
+						</div>
+					</li>
+					<li> <a href="../index.html">Noticias</a></li>
+					<li><a href="#contactscroll" class="scroll">Contacto</a> </li>
+				</ul>
+			</div>
+		</div>
+	<!-- Fin-Menu1 -->
+	<!-- Menu2 -->
+		<div class="navbar  pdd1 navbar-inverse navbar-static-top" role="navigation" id="menusmart">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-brand cursorr" style="margin-right:5%;" onclick="window.location = '../index.html'"><img class="resize" src="../images/logo_dataguard.png" /></div>
+			</div>
+				<div class="collapse navbar-collapse pdd3" id="nav-main">
+				<ul class="nav navbar-nav">
+					<a href="../index.html"><li>Inicio</li></a>
+					<a href="Outsourcing.html"><li>Outsourcing de IT</li></a>
+					<a href="IT-Hardware.html"><li>Hardware de IT</li></a>
+					<a href="Security.html"><li>Seguridad de la Red</li></a>
+					<a href="Software-Factory.html"><li>Integraci&oacute;n de Soluciones</li></a>
+					<a href="#consultoria" class="scroll"><li>Consutlor&iacute;a en Gesti&oacute;n de Riesgo</li></a>
+					<a href="../index.html"><li>Noticias</li></a>
+					<a href="#contactscroll" class="scroll"><li>Contacto</li></a> 
+				</ul>
+			</div>
+		</div>
+	<!-- Fin-Menu2 -->
+
+	<!--Seccion1-StartPortada-->
+	<header class="portada">
+		<section class="imgportadacompany w100">
+			<article class="infoportada w100">
+				<div class="titulocompany">
+					<h3>Nosotros</h3>
+					<br>
+				</div>	
+			</article>
+		</section>
+	</header> 
+	<!--FinSeccion1-EndPortada-->
+	<!--InicioSeccion2-info -->
+	<section class="infoback" style="background: #e7e7e7">
+		<article class="ourstory">
+			<div><h3>Nuestra Historia</h3>
+			<br>
+			<p>DataGuard pertenece a un Grupo Empresarial Centroamericano, especializado en Tecnologías de Información y Comunicaciones, con 27 años en el mercado. Somos una empresa salvadoreña cuya finalidad es brindar servicios que garantizan la continuidad de las operaciones tecnológicas de las empresas. </p>
+			</div>
+		</article>
+		<article class="w100">
+		<div class="left-info-company">
+			<div class="imgmision">
+				<img src="../images/img-mision.jpg">
+			</div>
+			<div class="misioninfo">
+				<h3>Misi&oacute;n</h3>
+				<p>Garantizar la continuidad del negocio de nuestros clientes a través de tecnolog&iacute;as de informaci&oacute;n y comunicaciones en el mercado Centroamericano.</p>
+			</div>
+		</div>
+		<div class="right-info-company">
+			<div class="imgvision">
+				<img src="../images/img-vision.jpg">
+			</div>
+			<div class="misioninfo">
+				<h3>Visi&oacute;n</h3>
+				<p>Ser referentes al ser altamente confiables y comprometidos en lo que hacemos, generando rentabilidad en beneficio de nuestros accionistas, empleados y aliados estrat&eacute;gicos.</p>
+		</div>
+		</article>
+	</section>
+	<!--finSeccion2-info -->
+	<!--inicioSeccion3-valores -->
+	<section class="w100" style="float: left; background: #ff9018">
+		<article class="ourvaluesbox w100">
+			<div class="ourvaluesinfo w100">
+				<h3>Nuestros Valores</h3>
+			</div>
+		</article>
+		<article class="valoresbox w100 left nr">
+			<div class="w100 left nr">
+				<div class="iconvalor">
+				<div class="w100 left">
+					<img class="iconvalorimg" src="../images/icono-integridad.png">
+					</div>
+					<h3>Integridad</h3>
+				</div>
+				<div class="iconvalor">
+				<div class="w100 left">
+					<img class="iconvalorimg" src="../images/icono-innovacion.png">
+					</div>
+					<h3>Inovaci&oacute;n</h3>
+				
+				</div>
+				<div class="iconvalor">
+					<div class="w100 left">
+					<img class="iconvalorimg" src="../images/icono-calidad.png">
+					</div>
+						<h3>Calidad</h3>
+				</div>
+			</div>
+		</article>
+	</section>
+<!-- Start-Contacto -->
+	<div id="contactscroll" style="background:#e7e7e7; width:100%; padding:1.5%; float:left;"></div>
+	<div id="contact" class="contact">
+		<div class="container" id="contact1">
+			<div class="contact-grids">
+				<div class="col-md-8">
+					<div class="contact-left wow fadeInRight" data-wow-delay="0.4s">
+						<h3>Cont&aacute;ctenos</h3>
+						<label>No se puede predecir, se prepara.</label>
+						<div class="contact-left-grids">
+							<div class="col-md-6">
+								<div class="contact-left-grid">
+									<h2>EL SALVADOR</h2>
+									<p>Paseo General <br>Escal&oacute;n y Calle <br>Arturo Ambrogi No.137<br> Colonia Escal&oacute;n. 
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="contact-right-grid">
+									<p><span class="c-msg"> </span><a href="#">info@dataguardgroup.com</a></p>
+									<p><span class="c-face"></span><a href="https://www.facebook.com/Dataguardgroup">facebook.com/Dataguardgroup</a></p>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="col-md-3">
+									<p>
+										GUATEMALA <br>
+										4. Avenida 7-83, <br>
+										Zona 10, Plaza <br>Ciudad Vieja, 2do. <br>
+										Nivel 
+									</p>
+								</div>
+								<div class="col-md-3">
+									<p>COSTA RICA<br>
+										750 mts Oeste <br>
+										Restaurante Tony <br>
+										Romas Escazu
+										</p>
+								</div>
+								<div class="col-md-3">
+										<p>NICARAGUA <br>
+										Centro comercial <br>Managua <br>
+										Modulo C-70
+										</p>
+								</div>
+								<div class="col-md-3">
+									<p>HONDURAS <br>Paseo General <br>Escal&oacute;n y Calle <br>Arturo Ambrogi No.137<br> Colonia Escal&oacute;n. 
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4  expertice-right-grid7  wow fadeInRight" id="close_right" data-wow-delay="0.4s">
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+			<div class="container" id="contact2">
+				<div class="contact-grids">
+					<div class="col-md-12">
+						<div class="contact-left wow fadeInRight" data-wow-delay="0.4s">
+							<h3>Cont&aacute;ctenos</h3>
+							<label>No se puede predecir, se prepara.</label>
+							<div class="contact-left-grids">
+								<div class="col-md-6">
+									<div class="contact-left-grid">
+										<h2>EL SALVADOR</h2>
+										<p>Paseo General <br>Escal&oacute;n y Calle <br>Arturo Ambrogi No.137<br> Colonia Escal&oacute;n. 
+										</p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="contact-right-grid">
+										<p><span class="c-msg"> </span><a href="#">info@dataguardgroup.com</a></p>
+										<p><span class="c-face"></span><a href="https://www.facebook.com/Dataguardgroup">facebook.com/Dataguardgroup</a></p>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="col-md-3">
+										<p>
+											GUATEMALA <br>
+											4. Avenida 7-83, <br>
+											Zona 10, Plaza <br>Ciudad Vieja, 2do. <br>
+											Nivel 
+										</p>
+									</div>
+									<div class="col-md-3">
+										<p>COSTA RICA<br>
+											750 mts Oeste <br>
+											Restaurante Tony <br>
+											Romas Escazu
+										</p>
+									</div>
+									<div class="col-md-3">
+										<p>NICARAGUA <br>
+											Centro comercial <br>Managua <br>
+											Modulo C-70
+										</p>
+									</div>
+									<div class="col-md-3">
+										<p>HONDURAS <br>Paseo General <br>Escal&oacute;n y Calle <br>Arturo Ambrogi No.137<br> Colonia Escal&oacute;n. 
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<!--Footer-->
+				<section class="finfooter w100" style="background: black; float: left;">
+					<article class="infofooter w100">
+						<div class="imgfooter">
+							<br>
+
+						</div>
+						<p class="text-center w100"><a href="#">DataGuard Group - 2017</a></p>
+					</article>
+				</section>
+				<!--- derechos_reservados_angel_cotto -->
+				<div class="copy-right text-center">
+
+					<script type="text/javascript">
+						$(document).ready(function() {
+
+							$().UItoTop({ easingType: 'easeOutQuart' });
+
+						});
+					</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+			</div>
+			<!-- End-Contacto -->		
+	</body>
+</html>
