@@ -1499,7 +1499,7 @@ margin: auto;
   display: block;
   padding: 75px;
   width: 50%;
-  height: 445px;
+  height: 500px;
   background-color: #cccccc;
 }
 
@@ -1527,7 +1527,7 @@ margin: auto;
   display: block;
   padding: 75px;
   width: 50%;
-  height: 445px;
+  height: 500px;
   background-color: #999999; 
 }
 
@@ -1536,8 +1536,6 @@ margin: auto;
   display: inline-block;
   float: left;
   margin: auto;
-  font-size: 20px;
-  font-weight: lighter;
 }
 
 .suggest2info h3{
@@ -1548,6 +1546,8 @@ margin: auto;
 
 .suggest2info p{
   color: #454545;
+  font-weight: lighter;
+  font-size: 20px;
 }
 
 
