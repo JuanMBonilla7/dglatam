@@ -1,4 +1,7 @@
 ﻿
+.img{
+  background-image: circulo.png
+}
 .left-img-rojo{
 		overflow: auto;
    margin: 0 0 0 15%;
