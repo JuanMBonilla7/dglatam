@@ -2,9 +2,10 @@
 .img{
   background-image: circulo.png
 }
+
 .left-img-rojo{
-		overflow: auto;
-   margin: 0 0 0 15%;
+	overflow: auto;
+  margin: 0 0 0 15%;
 	width: 80%;
 	padding: 5%;
 	max-height: 300px;
@@ -18,7 +19,6 @@
 	color:white;
 	margin: auto;
 }
-
 
 .riverainfoleft {
   width:100%;
