@@ -1,6 +1,8 @@
 ﻿
-.img{
-  background-image: circulo.png
+.textoimg{
+  color:#FFFFFF;
+  text-align: justify;
+  margin-left: 100px;
 }
 .left-img-rojo{
 		overflow: auto;
