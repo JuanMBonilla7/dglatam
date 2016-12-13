@@ -753,7 +753,7 @@ footer {
 }
 
 .contact-left-grid h2{
-  color: #e4bc3b;
+  color: #ff9018;
 }
 
 .contact-left-grid p{
@@ -960,7 +960,7 @@ footer {
 
 .infoportada p:hover,
 .infoportada a:hover{
-    color: #d6b101 !important;
+    color: #ff9018 !important;
     text-decoration: none !important;
 }
 
@@ -1482,7 +1482,7 @@ padding: 10%;
 }
 
 .moar h3{
-  color: #dfc133;
+  color: #ff9018;
   font-size: 35px;
   font-weight: 5px;
   text-align: center;
