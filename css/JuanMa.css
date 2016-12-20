@@ -220,7 +220,7 @@ img.resize{
 
 .pdb2 {
   margin-top: 2%;
-  margin-left: 20%;
+  margin-left: 30%;
   margin-right: 20%;
 }
 }
@@ -235,7 +235,7 @@ img.resize{
 
 .pdb2 {
   margin-top: 2%;
-  margin-left: 20%;
+  margin-left: 25%;
   margin-right: 20%;
 }
 
@@ -253,7 +253,7 @@ img.resize{
 
 .pdb2 {
   margin-top: 2%;
-  margin-left: 15%;
+  margin-left: 20%;
   margin-right: 15%;
 }
 .cursorr img{
@@ -270,7 +270,7 @@ img.resize{
 
 .pdb2 {
   margin-top: 2%;
-  margin-left: 12%;
+  margin-left: 20%;
   margin-right: 12%;
 }
 
@@ -363,7 +363,7 @@ img.resize{
 /*----Resumen Company----*/
 
 .resumencompany{
-   background:#e7e7e7;
+   background:#C0C0C0;
    height: auto;
    float: left;
    width: 100%;
