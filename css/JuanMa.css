@@ -20,21 +20,6 @@ width:100% !important;
   display: inline-block;
 }
 
-.sectionservices{
-  float: left;
-  width: 100%;
-}
-
-.imgportada{
-  float: left;
-  background-image: url(../images/img-1.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
-
 .imgportadacompany{
   float: left;
   background-image: url(../images/img-2.jpg);
@@ -55,7 +40,7 @@ width:100% !important;
   background-color: #464646;
 }
 
-.imgportadahardware{
+.imgportadadata{
   float: left;
   background-image: url(../images/img-4.jpg);
   background-position: center center;
@@ -75,7 +60,7 @@ width:100% !important;
   background-color: #464646;
 }
 
-.imgportadafactory{
+.imgportadanoticias{
   float: left;
   background-image: url(../images/img-6.jpg);
   background-position: center center;
@@ -93,17 +78,6 @@ width:100% !important;
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
-}
-
-.ourservicesimg{
-  height: 281px;
-  float: left;
-  background-image: url(../images/services.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
-  width: 100%;
 }
 
 img.resize{
@@ -161,12 +135,6 @@ img.resize{
 
 
 /*----DropdwnMenu----*/
-
-.dropbtn {
-  border: none;
-  cursor: pointer;
-}
-
 .dropdown {
   float: left;
   position: relative;
@@ -313,66 +281,12 @@ img.resize{
   color: black !important;
 }
 
-.espaciotop {
-  padding-top: 10px;
-  float: left;
-}
-
-.logo-portada {
-  text-align: center;
-}
-
-.decoracion {
-  margin: auto;
-  height: 5px;
-  width: 300px;
-  margin-top: 30px;
-}
-
 .infoportada {
   padding: 0 0 50px 0;
   float: left;
 }
-
-.subtitulo {
-  width: 100%;
-  float: left;
-}
-
-.subtitulo h3{
-  font-weight: lighter !important;
-  color: white;
-  text-align: center;
-}
-
-.portadaservices {
-  float: left;
-  width: 100%;
-}
-
-.portadaservices h1{
-  font-weight: bolder !important;
-  color: white;
-  font-weight: 600;
-  text-align: center;
-}
-
-.portadaservices h1:hover{
-  color: #d8a53b;
-  -webkit-transition: color 0.5s ease-in-out;
-  -moz-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out;
-}
-
-.portadaservices a:hover {
-  text-decoration: none;
-}
-
 /*----Fin Nav y Portada----*/
-
 /*----Resumen Company----*/
-
 .resumencompany{
    background:#C0C0C0;
    height: auto;
@@ -465,86 +379,6 @@ img.resize{
   float: left;
   display: inline-block;
   padding: 10px 100px 50px 25px;
-}
-
-/*----Solutions----*/
-#imgservicios{
-   margin: auto;
-}
-
-/*----Outsourcing----*/
-.resumenoutsrc{
-   background:#f0f0f0;
-   margin: auto;
-   width: 100%;
-   float: left;
-}
-
-.outsrc-info {
-   float: left;
-   width: 50%;
-   padding: 100px 40px 0 250px
- }
-
-.outsrc-info h3{
-   color: #454545;
-   font-size: 35px;
-   font-weight: 5px;
-}
-
-.outsrc-img {
-  float: right;
-  width: 50%;
-  padding: 50px 0 50px 40px;
-}
-
-/*----Hardware----*/
-.resumenhard{
-  background:#b3b3b3;
-  margin: auto;
-  width: 100%;
-  float: right;
-}
-
-
-.resumenhard p,
-.resumenidentity p{
-  color: #454545 !important;
-}
-
-
-.hard-info {
-  float: right;
-  width: 50%;
-  padding: 100px 250px 0 40px
-}
-
-.hard-info h3{
-   color: #454545;
-   font-size: 35px;
-   font-weight: 5px;
-}
-
-.hard-img {
-  float: left;
-  width: 50%;
-  padding: 50px 40px 50px 250px;
-}
-
- /*----Identity----*/
- .resumenidentity{
-   background:#cccccc;
-   margin: auto;
-   width: 100%;
-   float: left;
-}
-
-/*----SoftwareFactory----*/
-.resumenfactory{
-  background:#fff;
-  margin: auto;
-  width: 100%;
-  float: right;
 }
 
 /*----Carousel----*/
@@ -851,25 +685,6 @@ footer {
   background-position: 0px -132px;
 }
 
-.contactregion{
-  float: left;
-  display: block;
-  width: 100%;
-}
-
-.guatemala {
-  padding-top: 50px;
-  color: #242c57;
-  float: left;
-
-}
-
-.costarica {
-  padding-top: 50px;
-  color: #242c57;
-  float: left;
-
-}
 .active{
   border-bottom: 3px solid #ff9018 !important;
 }
@@ -1306,23 +1121,6 @@ padding: 10%;
 }
 
 } 
-.titulooutsourcing {
-    margin: auto;
-    padding-top: 150px;
-    padding-left: 150px;
-}
-
-.titulooutsourcing h3{
-  color: white;
-  font-size: 5em;
-  font-weight: 600;
-}
-
-.titulooutsourcing p{
-  color: white;
-  font-size: 30px;
-  font-weight: 300;
-}
 
 .left-info-cuadro-rojo {
   width: 100% !important;
@@ -1337,14 +1135,6 @@ padding: 10%;
   display: block;
   padding-top: 50px;
   width: 100% !important;  
-}
-
-
-.right-info-outsrc {
-  float: right;
-  display: block;
-  padding-top: 50px;
-  width: 100% !important; 
 }
 }
 
@@ -1430,21 +1220,6 @@ padding: 10%;
     padding-top: 0px !important;
     width: 100% !important;
 }
-
-}
-
-
-.right-info-outsrc {
-  float: right;
-  display: block;
-  width: 50% !important; 
-}
-
-.outsrc-info1 {
-  width:75%;
-  display: inline-block;
-  float: left;
-  padding: 40px;
 }
 
 .left-info-staffing {
@@ -1634,44 +1409,6 @@ padding: 10%;
   width:60%;
   margin: auto;
   display: block;
-}
-
-.right-img-staffing {
-  float: right;
-  width: 50% !important; 
-}
-
-/*--HH--*/
-
-.left-img-hh {
-  float: left;
-  width: 50% !important;
-  padding: 0 0 0 100px;  
-}
-
-.img-hh {
-  width:100%;
-  display: inline-block;
-  float: left;
-  padding: 40px ;
-}
-
-.img-hh img{
-  width:100%;
-  float: left;
-}
-
-.right-info-hh {
-  float: right;
-  display: block;
-  width: 50% !important;
-  padding: 75px 200px 0 40px;
-}
-
-.hh-info h3{
-  color: #454545;
-  font-size: 35px;
-  font-weight: 5px;
 }
 
 .suggestions-title {
@@ -1865,7 +1602,6 @@ padding: 10%;
   color: #454545;
   font-size: 17px !important;
 }
-
 }
 
 
@@ -1889,133 +1625,6 @@ padding: 10%;
   transition: opacity 0.5s ease;  
 }
 
-
-.titulohardware {
-    margin: auto;
-    padding-top: 100px;
-    padding-left: 150px;
-}
-
-.titulohardware h3{
-  color: white;
-  font-size: 5em;
-  font-weight: 600;
-}
-
-.titulohardware p{
-  color: white;
-  font-size: 30px;
-  font-weight: 300;
-}
-
-.hardw-info1 {
-  width:75%;
-  display: inline-block;
-  float: left;
-  padding: 10px 40px 0 40px;
-}
-
-.img-servers {
-  width:100%;
-  display: inline-block;
-  float: left;
-  padding: 0 0 0 40px;
-}
-
-.img-servers img{
-  width:75%;
-  float: left;
-}
-
-.left-info-servers {
-  float: left;
-  display: block;
-  width: 50% !important;
-  padding: 10px 40px 0 200px;
-}
-
-.left-img-net {
-  float: left;
-  width: 50% !important;
-  padding: 0 0 0 100px;  
-}
-
-.img-net {
-  width:100%;
-  display: inline-block;
-  float: left;
-  padding: 40px ;
-}
-
-.img-net img{
-  width:100%;
-  float: left;
-}
-
-.populartitle {
-  float: left;
-  width: 100%;
-}
-
-.popularleft {
-  width: 50%;
-  float: left;
-}
-
-.popularleft h3{
-  color: white;
-  font-size: 35px;
-  font-weight: 5px;
-  text-align: center;
-}
-
-.popularright {
-  width: 50%;
-  float: right;
-}
-
-.gotoboton {
-  width: 50%;
-  background-color: #ff0000;
-  padding: 3px;
-  margin: auto;
-  float: left;
-}
-
-.gotoboton h3{
-  color: white;
-  font-size: 25px;
-  font-weight: 3px;
-  text-align: center;
-}
-
-.list-servers {
-  width: 20%;
-  float: left;
-  display: block;
-}
-
-.list-servers h3{
-  float: left;
-  color: white;
-  width: 100%;
-}
-
-.list-servers ul{
-  color: white;
-  width: 100%;
-}
-
-.list-servers li{
-  padding-top: 10px;
-}
-
-.list-servers a{
-
-  color: white;
-  padding-top: 10px;
-}
-
 #contact1{
 display: inline-block;
 
@@ -2033,126 +1642,6 @@ display: none;
 #contact2 {
 display: inline-block;
 
-}
-}
-
-@media only screen and (min-width:848px) and (max-width: 1055px)  {
-
-.list-servers {
-  width: 25%;
-  float: left;
-  display: block;
-  height: 250px;
-}
-
-.list-servers h3{
-  float: left;
-  color: white;
-  width: 100%;
-}
-
-.list-servers ul{
-  color: white;
-  width: 100%;
-}
-
-.list-servers li{
-  padding-top: 10px;
-}
-
-.list-servers a{
-  color: white;
-  padding-top: 10px;
-}
-}
-
-@media only screen and (min-width:768px) and (max-width: 847px)  {
-
-.list-servers {
-  width: 33.3%;
-  float: left;
-  display: block;
-  height: 200px;
-}
-
-.list-servers h3{
-  float: left;
-  color: white;
-  width: 100%;
-}
-
-.list-servers ul{
-  color: white;
-  width: 100%;
-}
-
-.list-servers li{
-  padding-top: 10px;
-}
-
-.list-servers a{
-  color: white;
-  padding-top: 10px;
-}
-}
-
-@media only screen and (min-width:360px) and (max-width: 767px)  {
-
-.list-servers {
-  width: 50%;
-  float: left;
-  display: block;
-  height: 200px;
-}
-
-.list-servers h3{
-  float: left;
-  color: white;
-  width: 100%;
-}
-
-.list-servers ul{
-  color: white;
-  width: 100%;
-}
-
-.list-servers li{
-  padding-top: 10px;
-}
-
-.list-servers a{
-  color: white;
-  padding-top: 10px;
-}
-}
-
-@media only screen and (min-width:0px) and (max-width: 437px)  {
-
-.list-servers {
-  width: 100%;
-  float: left;
-  display: block;
-  height: 200px;
-}
-
-.list-servers h3{
-  float: left;
-  color: white;
-  width: 100%;
-}
-
-.list-servers ul{
-  color: white;
-  width: 100%;
-}
-
-.list-servers li{
-  padding-top: 10px;
-}
-
-.list-servers a{
-  color: white;
-  padding-top: 10px;
 }
 }
 
