@@ -345,42 +345,50 @@ img.resize{
   text-align: center;
 }
 
+
+
 .partnerlogo1 {
+  width: 25%;
+  height: 250px;
   float: left;
-  display: inline-block;
-  padding: 50px 25px 10px 100px;
+  padding: 2%;
 }
 
-.partnerlogo {
-  float: left;
-  display: inline-block;
-  padding: 50px 25px 10px 25px;
+.partnerlogo1img{
+ display: block;
+ margin: auto;
 }
 
-.partnerlogo2 {
+
+@media only screen and (min-width:594px) and (max-width: 1000px)  {
+.partnerlogo1 {
+  width: 50%;
+  height: 250px;
   float: left;
-  display: inline-block;
-  padding: 50px 100px 10px 25px;
+  padding: 2%;
 }
 
-.partnerlogo3 {
-  float: left;
-  display: inline-block;
-  padding: 10px 25px 50px 100px;
+.partnerlogo1img{
+ display: block;
+ margin: auto;
 }
 
-.partnerlogo4 {
-  float: left;
-  display: inline-block;
-  padding: 10px 25px 50px 25px;
 }
 
-.partnerlogo5 {
+@media only screen and (min-width:0px) and (max-width: 593px)  {
+.partnerlogo1 {
+  width: 100%;
+  height: 250px;
   float: left;
-  display: inline-block;
-  padding: 10px 100px 50px 25px;
+  padding: 2%;
 }
 
+.partnerlogo1img{
+ display: block;
+ margin: auto;
+}
+
+}
 /*----Carousel----*/
 
 .carouselmodif {
@@ -1648,8 +1656,8 @@ display: inline-block;
 .titulocar1 {
   background-color:rgba(0,84,80,0.7);
   float: left;
-  margin: 25px 0 50px 275px;
-  width: 35%;
+  margin: 1% 0 2.5% 15%;
+  width: 35%  ;
 }
 
 .titulocar1 h3 {
@@ -1670,7 +1678,7 @@ display: inline-block;
 .titulocar2 {
   background-color:rgba(11,65,115,0.9);
   float: right;
-  margin: 25px 275px 50px 0;
+  margin: 1% 15% 2.5% 0%;
   width: 35%;
 }
 
@@ -1688,3 +1696,37 @@ display: inline-block;
   font-weight: lighter;
   padding: 10px 35px 10px 35px;
 }
+
+@media only screen and (min-width:0px) and (max-width: 900px)  {
+.titulocar1 {
+  background-color:rgba(0,84,80,0.7);
+  float: left;
+  margin: 0%;
+  width: 100% !important;
+}
+
+.titulocar2 {
+  background-color:rgba(11,65,115,0.9);
+  float: right;
+  margin: 0%;
+  width: 100% !important;
+}
+
+.titulocar1 h3 {
+font-size: 25px !important;
+}
+
+.titulocar1 p{
+font-size: 20px !important;
+}
+
+
+.titulocar2 h3 {
+font-size: 25px !important;
+}
+
+.titulocar2 p{
+font-size: 20px !important;
+}
+
+  }

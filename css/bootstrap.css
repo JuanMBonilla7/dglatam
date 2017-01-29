@@ -3457,7 +3457,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav > li > a {
   position: relative;
-  padding: 10px 15px;
+  padding: 10px 12px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -3811,7 +3811,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-nav {
     float: left;
-    margin: 0 0 0 12%;
+    margin: 0 0 0 9.5%;
   }
   .navbar-nav > li {
     float: left;
