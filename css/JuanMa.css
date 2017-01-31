@@ -1268,152 +1268,10 @@ padding: 10%;
   width:100%;
   display: block;
   margin: auto;
+  padding-top: 50px;
 }
 
 .img-esquema img{
-  width:60%;
-  margin: auto;
-  display: block;
-}
-
-.img-esquema-brp {
-  width:100%;
-  display: block;
-  margin: auto;
-  padding-top: 150px;
-}
-
-.img-esquema-brp img{
-  width:60%;
-  margin: auto;
-  display: block;
-}
-
-.img-esquema-recovery {
-  width:100%;
-  display: block;
-  margin: auto;
-  padding-top: 150px;
-}
-
-.img-esquema-recovery img{
-  width:60%;
-  margin: auto;
-  display: block;
-}
-
-.img-esquema-replicacion {
-  width:100%;
-  display: block;
-  margin: auto;
-  padding-top: 150px;
-}
-
-.img-esquema-replicacion img{
-  width:60%;
-  margin: auto;
-  display: block;
-}
-
-.img-esquema-infraestructura {
-  width:100%;
-  display: block;
-  margin: auto;
-  padding-top: 50px;
-}
-
-.img-esquema-infraestructura img{
-  width:60%;
-  margin: auto;
-  display: block;
-}
-
-.img-esquema-staff {
-  width:100%;
-  display: block;
-  margin: auto;
-  padding-top: 200px;
-}
-
-.img-esquema-staff img{
-  width:60%;
-  margin: auto;
-  display: block;
-}
-
-.img-esquema-multi {
-  width:100%;
-  display: block;
-  margin: auto;
-  padding-top: 50px;
-}
-
-.img-esquema-multi img{
-  width:60%;
-  margin: auto;
-  display: block;
-}
-
-.img-esquema-segadmin {
-  width:100%;
-  display: block;
-  margin: auto;
-  padding-top: 150px;
-}
-
-.img-esquema-segadmin img{
-  width:60%;
-  margin: auto;
-  display: block;
-}
-
-.img-esquema-reme {
-  width:100%;
-  display: block;
-  margin: auto;
-  padding-top: 100px;
-}
-
-.img-esquema-reme img{
-  width:60%;
-  margin: auto;
-  display: block;
-}
-
-.img-esquema-transacciones {
-  width:100%;
-  display: block;
-  margin: auto;
-  padding-top: 175px;
-}
-
-.img-esquema-transacciones img{
-  width:60%;
-  margin: auto;
-  display: block;
-}
-
-.img-esquema-bases {
-  width:100%;
-  display: block;
-  margin: auto;
-  padding-top: 50px;
-}
-
-.img-esquema-bases img{
-  width:60%;
-  margin: auto;
-  display: block;
-}
-
-.img-esquema-banca {
-  width:100%;
-  display: block;
-  margin: auto;
-  padding-top: 75px;
-}
-
-.img-esquema-banca img{
   width:60%;
   margin: auto;
   display: block;
@@ -1730,3 +1588,11 @@ font-size: 20px !important;
 }
 
   }
+
+.col-md-3{
+  float: left;
+  display: inline !important;
+  width: 25%;
+  padding: 10px 10px 20px 5px;
+  position: relative;
+}
