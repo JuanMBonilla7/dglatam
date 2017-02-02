@@ -3,17 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Consultoria en Gestion de Riesgo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Bootstrap core CSS -->
 	<link href="../css/bootstrap.css" rel="stylesheet">
 	<link href="../css/style.css" rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" type="text/css" href="../css/default.css" />
 	<link rel="stylesheet" type="text/css" href="../css/component.css" />
 	<link rel="stylesheet" type="text/css" href="../css/JuanMa.css" />
-	<link rel="stylesheet" type="text/css" href="../css/riivera.css"/>
 	<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-	<link href="../css/full-slider.css" rel="stylesheet" type="text/css" />
-	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="icon" href="../images/favicon.ico">
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="../js/jquery-1.11.3.min.js"></script>
@@ -23,32 +21,60 @@
 
 <!----start-top-nav-script---->
 <script>
-$(function() {
-	var pull 		= $('#pull');
-	menu 		= $('nav ul');
-	menuHeight	= menu.height();
-	$(pull).on('click', function(e) {
-		e.preventDefault();
-		menu.slideToggle();
+	$(function() {
+		var pull 		= $('#pull');
+		menu 		= $('nav ul');
+		menuHeight	= menu.height();
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+		$(window).resize(function(){
+			var w = $(window).width();
+			if(w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
 	});
-	$(window).resize(function(){
-		var w = $(window).width();
-		if(w > 320 && menu.is(':hidden')) {
-			menu.removeAttr('style');
-		}
-	});
-});
 </script>
 <script type="text/javascript" src="../js/move-top.js"></script>
 <script type="text/javascript" src="../js/easing.js"></script>
 <script type="text/javascript">
-jQuery(document).ready(function($) {
-	$(".scroll").click(function(event){		
-		event.preventDefault();
-		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+
+		var navMain = $("#nav-main");
+		navMain.on("click", "a", null, function () {
+			navMain.collapse('hide');
+		});
+
 	});
-});
+
 </script>
+
+<style>
+	/* bootstrap 3 helpers */
+
+	.navbar-form input, .form-inline input {
+		width:auto;
+	}
+
+	#menusmart{
+		width: 100%;
+		position: fixed;
+		top: 0px;
+	}
+
+
+	#menusmart.affix {
+		width: 100%;
+		position: fixed;
+		top: 0px;
+	}
+</style>
 </head>
 <body>
 	<!-- Menu1 -->
@@ -79,6 +105,9 @@ jQuery(document).ready(function($) {
 					<li><a href="#contactscroll" class="scroll">Contacto</a> </li>
 				</ul>
 			</div>
+			<div style="position:absolute; right:1%; top:25px;">
+			<div class="right"><input type="button" class="btn btn-primary" onClick="location.href='http://cliente.dataguard.com.sv/'"value="Ingreso Cliente"></div>
+			</div>
 		</div>
 	<!-- Fin-Menu1 -->
 	<!-- Menu2 -->
@@ -101,6 +130,7 @@ jQuery(document).ready(function($) {
 					<a href="Seguridad de la Red.html"><li>Seguridad de la Red</li></a>
 					<a href="Noticias.html"><li> Noticias</li></a>
 					<a href="#contactscroll" class="scroll"><li>Contacto</li></a> 
+					<a href="http://cliente.dataguard.com.sv/"><li><b>Ingreso Cliente</b></li></a> 
 				</ul>
 			</div>
 		</div>
